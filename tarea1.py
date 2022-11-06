@@ -132,6 +132,31 @@ def eliminar_libro():
 
 # Opción 5:
 
+def buscar_isbn_titulo():
+  try:
+    print("Elija opción de busqueda:\n 1 = ISBN\n 2 = TÍTULO")
+    opcion = int(input("Escriba la opción elegida: "))
+    resultado = []
+    if opcion == 1:
+        isbnlibro = input("ingrese el ISBN del libro: ")
+        for elemento in libros_dd:
+            if (elemento.getisbn() == isbnlibro):
+                resultado.append(elemento)
+    elif opcion == 2:
+        titulolibro = input("ingrese el TÍTULO del libro: ")
+        resultado = []
+        for elemento in libros_dd:
+            if (elemento.gettitulo() == titulolibro):
+                resultado.append(elemento)
+    print('\nResultados de la búsqueda')
+    header()
+    for i in resultado:
+      i.fila()
+  except:
+    print('Ocurrió un problema')
+  finally:
+    fin_opciones()
+
 
 # Opción 6:
 
@@ -147,7 +172,51 @@ def ordenar_titulo():
 
 # Opcion 7
 
+def buscar_autor_editorial_genero():
+  try:
+    print("Elija la opción a buscar:\n 1 = AUTOR\n 2 = EDITORIAL\n 3 = GÉNERO")
+    opcion = int(input("Seleccione la forma de busqueda"))
+    resultado = []
+    if opcion == 1:
+          autorlibro = input("Ingrese el NOMBRE del autor buscado")
+          for elemento in libros_dd:
+              if autorlibro in elemento.getautor():
+                  resultado.append(elemento)
+    elif opcion == 2:
+        editoriallibro = input("Ingrese el nombre de la EDITORIAL a buscar ")
+        for elemento in libros_dd:
+            if (elemento.geteditorial() == editoriallibro):
+                resultado.append(elemento)
+    elif opcion == 3:
+          generolibro = input("Ingrese el GÉNERO a buscar")
+          for elemento in libros_dd:
+              if (elemento.getgenero() == generolibro):
+                  resultado.append(elemento)
+    print('\nResultados de la búsqueda')
+    header()
+    for i in resultado:
+      i.fila()
+  except:
+    print('\nOcurrió un problema')
+  finally:
+    fin_opciones()
+
 # Opcion 8
+def buscar_nro_autores():
+  try:
+    numerodeautores = int(input("ingrese la NÚMERO de autores buscados"))
+    resultado = []
+    for elemento in libros_dd:
+      if (len(elemento.getautor()) == numerodeautores):
+        resultado.append(elemento)
+    print('\nResultados de la búsqueda')
+    header()
+    for i in resultado:
+      i.fila()
+  except:
+    print('\nOcurrión un problema')
+  finally:
+    fin_opciones()
 
 # Opcion 9
 
