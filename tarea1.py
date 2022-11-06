@@ -131,6 +131,7 @@ def eliminar_libro():
     interfaz()
 
 # Opción 5:
+
 def buscar_isbn_titulo():
   try:
     print("Elija opción de busqueda:\n 1 = ISBN\n 2 = TÍTULO")
@@ -156,6 +157,7 @@ def buscar_isbn_titulo():
   finally:
     fin_opciones()
 
+
 # Opción 6:
 
 def ordenar_titulo():
@@ -169,6 +171,7 @@ def ordenar_titulo():
   fin_opciones()
 
 # Opcion 7
+
 def buscar_autor_editorial_genero():
   try:
     print("Elija la opción a buscar:\n 1 = AUTOR\n 2 = EDITORIAL\n 3 = GÉNERO")
@@ -214,6 +217,7 @@ def buscar_nro_autores():
     print('\nOcurrión un problema')
   finally:
     fin_opciones()
+
 # Opcion 9
 
 def editar_libro():
