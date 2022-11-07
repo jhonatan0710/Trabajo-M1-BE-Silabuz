@@ -1,0 +1,7 @@
+id,titulo,genero,isbn,editorial,autor
+111,El Quijote,Fantasía,8423349640,Ediciones Destino,Miguel de Cervantes Saavedra
+112,La Odisea,Fantasía,1511611480,CreateSpace Independent Publishing Platform,Homero
+113,Ejemplo de libro,Fantasía,978-451-515,Editorial Salamandra,Pepito Suarez|Juan Perez
+114,La casa verde,Fantasía,978-451-516,Editorial Salamandra,Mario Vargas Llosa
+115,Ejemplo de libro 2,Fantasía,978-451-517,Editorial Salamandra,Juan Perez
+116,Otro ejemplo,Terror,982312398,Editorial Ejemplo,Pepito Suarez|Juan Ejemplo
